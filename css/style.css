@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+
+/* font-family: 'Comic Neue', cursive;*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background:#eda121 ;
+}
+
+.header{
+    height: 154px;
+    width: 100%;
+    background: #12120f;
+}
+
+li, .nav__item{
+    font-family: 'Comic Neue', cursive;
+   font-size: 28px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+img{
+    margin-left: 40px;
+    opacity: .8;
+}
+
+.nav__rg{
+    margin-right: 40px;
+}
+
+.boton, a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background: #12120f;
+    border: none;
+    outline: none;
+    width: 30px;
+    font-size: 33px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all .4s ease;
+}
+
+.boton a:hover{
+    color: #b82734;
+    text-shadow: 0 0 80px rgba(255,255,255,.6);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu li{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav__item{
+    transition: all .4s ease;
+}
+
+.nav__item:hover{
+    color: #b82734;
+    text-shadow: 0 0 80px rgba(255,255,255,.6);
+}
+
+
