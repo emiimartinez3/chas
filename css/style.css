@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #12120f;
+}
+
 body{
     background:#eda121 ;
 }
@@ -74,5 +80,287 @@ img{
     color: #b82734;
     text-shadow: 0 0 80px rgba(255,255,255,.6);
 }
+
+
+
+/*----CONTACTO----*/
+
+.section{
+    width: 1200px;
+    height: 850px;
+    display: grid;
+    grid-template-areas: 
+    "xport formulario";
+    grid-template-columns: 550px 650px;
+    grid-template-rows: auto;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 150px;
+}
+
+.xport{
+    grid-area: xport;
+   margin-left: 0px;
+}
+
+.formulario{
+    grid-area: formulario;
+    background-color: #b82734;
+    color: white;
+    font-family: 'Comic Neue', cursive;
+    display: grid;
+    gap: 10px;
+}
+
+.form__error-input{
+    display: none;
+    margin-bottom: 0px;
+    margin-left: 33px;
+}
+
+.form__error-input-activo{
+    display: block;
+}
+
+
+
+.contactenos{
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    height: 50px;
+}  
+
+
+.form__grupo label, input, textarea {
+    width: 85%;
+    border: none;
+    outline: none;
+    resize: none;
+    padding-left: 10px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.form__label{
+    cursor: pointer;
+}
+
+
+.form__grupo-input, .form__grupo-mensaje {
+position: relative;
+}
+
+.form__input{
+    background-color: #ca3c48;
+    border-radius: 4px;
+    transition: all .1s ease;
+    height: 30px;
+    line-height: 30px;
+}
+
+.form__textarea{
+    background-color: #ca3c48;
+    border-radius: 4px;
+}
+
+.form__grupo input:focus{
+    border: 2px solid #eda121;
+    outline: none;
+}
+
+.form__grupo input:hover{
+    border: 2px solid #eda121;
+    outline: none;
+}
+
+textarea:focus{
+    border: 2px solid #eda121;
+    outline: none;
+}
+
+textarea:hover{
+    border: 2px solid #eda121;
+    outline: none;
+}
+
+.form__check{
+    margin-left: 30px;
+    margin-right: 5px;
+    width: 13px;
+}
+
+.form__error-mensaje{
+    width: 85%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eda121;
+    color: #12120f;
+    border-radius: 4px;
+    padding-left: 30px;
+    margin-left: 30px;
+    display: none;
+}
+
+.form__error-mensaje p{
+    margin: 0px;
+}
+
+.form__error-mensaje-activo{
+    display: block;
+}
+
+.form__boton-enviar{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form__boton{
+    width: 200px;
+    height: 30px;
+    background-color: #12120f;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    resize: none;
+    transition: .2s ease;
+}
+
+.form__boton:hover{
+    color: #b82734;
+}
+
+.form__exito{
+    margin-top: 4px;
+    color: rgb(41, 224, 41);
+    display: none;
+}
+
+
+.form__exito-activo{
+    display: block;
+}
+
+/*----ACTIVACION----*/
+
+.form__grupo-bien .form__input{
+    color: #eda121;
+}
+
+.form__grupo-mal .form__label{
+    color: #12120f;
+}
+
+.form__grupo-mal .form__input{
+    border: 2px solid #12120f;
+    border-radius: 4px;
+}
+
+.form__grupo-bien .form__textarea{
+    color: #eda121;
+}
+
+.form__grupo-mal .form__textarea{
+    border: 2px solid #12120f;
+    border-radius: 4px;
+}
+
+
+
+
+/*
+.nombre input, label{
+    width: 90%;
+   
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    background-color: #b82734;
+    transform: all linear 5s;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+.apellido input, label{
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    background-color: #b82734;
+    transform: all linear 5s;
+    margin-left: 30px;
+}
+
+.email input, label{
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    background-color: #b82734;
+    transform: all linear 5s;
+    margin-left: 30px;
+}
+
+.numero input, label{
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    background-color: #b82734;
+    transform: all linear 5s;
+    margin-left: 30px;
+}
+
+.mensaje textarea{
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    background: #b82734;
+    transform: all linear 5s;
+    margin-left: 30px;
+}
+
+
+
+input:focus , textarea:focus{
+    border: 2px solid #eda121;
+    border-radius: 5px;
+}
+
+input:hover , textarea:hover{
+    border: 2px solid #eda121;
+    border-radius: 5px;
+}
+
+.boton{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+    font-size: 19px;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    color: #b82734;
+}*/
 
 
