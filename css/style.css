@@ -2,46 +2,49 @@
 
 /* font-family: 'Comic Neue', cursive;*/
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-.footer{
+.footer {
     width: 100%;
     height: 300px;
     background-color: #12120f;
 }
 
-body{
-    background:#eda121 ;
+body {
+    background: #eda121;
+    font-family: 'Comic Neue', cursive;
 }
 
-.header{
+.header {
     height: 154px;
     width: 100%;
     background: #12120f;
 }
 
-li, .nav__item{
+li,
+.nav__item {
     font-family: 'Comic Neue', cursive;
-   font-size: 28px;
+    font-size: 28px;
     color: white;
     text-decoration: none;
     list-style: none;
 }
 
-img{
+img {
     margin-left: 40px;
     opacity: .8;
 }
 
-.nav__rg{
+.nav__rg {
     margin-right: 40px;
 }
 
-.boton, a{
+.boton,
+a {
     text-decoration: none;
     list-style: none;
     color: white;
@@ -55,42 +58,42 @@ img{
     transition: all .4s ease;
 }
 
-.boton a:hover{
+.boton a:hover {
     color: #b82734;
-    text-shadow: 0 0 80px rgba(255,255,255,.6);
+    text-shadow: 0 0 80px rgba(255, 255, 255, .6);
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav__menu li{
+.nav__menu li {
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.nav__item{
+.nav__item {
     transition: all .4s ease;
 }
 
-.nav__item:hover{
+.nav__item:hover {
     color: #b82734;
-    text-shadow: 0 0 80px rgba(255,255,255,.6);
+    text-shadow: 0 0 80px rgba(255, 255, 255, .6);
 }
 
 
 
 /*----CONTACTO----*/
 
-.section{
+.section {
     width: 1200px;
     height: 850px;
     display: grid;
-    grid-template-areas: 
-    "xport formulario";
+    grid-template-areas:
+        "xport formulario";
     grid-template-columns: 550px 650px;
     grid-template-rows: auto;
     margin-top: 150px;
@@ -99,12 +102,12 @@ img{
     margin-bottom: 150px;
 }
 
-.xport{
+.xport {
     grid-area: xport;
-   margin-left: 0px;
+    margin-left: 0px;
 }
 
-.formulario{
+.formulario {
     grid-area: formulario;
     background-color: #b82734;
     color: white;
@@ -113,29 +116,31 @@ img{
     gap: 10px;
 }
 
-.form__error-input{
+.form__error-input {
     display: none;
     margin-bottom: 0px;
     margin-left: 33px;
 }
 
-.form__error-input-activo{
+.form__error-input-activo {
     display: block;
 }
 
 
 
-.contactenos{
+.contactenos {
     margin-top: 25px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
     height: 50px;
-}  
+}
 
 
-.form__grupo label, input, textarea {
+.form__grupo label,
+input,
+textarea {
     width: 85%;
     border: none;
     outline: none;
@@ -145,16 +150,17 @@ img{
     margin-right: auto;
 }
 
-.form__label{
+.form__label {
     cursor: pointer;
 }
 
 
-.form__grupo-input, .form__grupo-mensaje {
-position: relative;
+.form__grupo-input,
+.form__grupo-mensaje {
+    position: relative;
 }
 
-.form__input{
+.form__input {
     background-color: #ca3c48;
     border-radius: 4px;
     transition: all .1s ease;
@@ -162,38 +168,38 @@ position: relative;
     line-height: 30px;
 }
 
-.form__textarea{
+.form__textarea {
     background-color: #ca3c48;
     border-radius: 4px;
 }
 
-.form__grupo input:focus{
+.form__grupo input:focus {
     border: 2px solid #eda121;
     outline: none;
 }
 
-.form__grupo input:hover{
+.form__grupo input:hover {
     border: 2px solid #eda121;
     outline: none;
 }
 
-textarea:focus{
+textarea:focus {
     border: 2px solid #eda121;
     outline: none;
 }
 
-textarea:hover{
+textarea:hover {
     border: 2px solid #eda121;
     outline: none;
 }
 
-.form__check{
+.form__check {
     margin-left: 30px;
     margin-right: 5px;
     width: 13px;
 }
 
-.form__error-mensaje{
+.form__error-mensaje {
     width: 85%;
     height: 50px;
     line-height: 50px;
@@ -205,20 +211,20 @@ textarea:hover{
     display: none;
 }
 
-.form__error-mensaje p{
+.form__error-mensaje p {
     margin: 0px;
 }
 
-.form__error-mensaje-activo{
+.form__error-mensaje-activo {
     display: block;
 }
 
-.form__boton-enviar{
+.form__boton-enviar {
     margin-left: auto;
     margin-right: auto;
 }
 
-.form__boton{
+.form__boton {
     width: 200px;
     height: 30px;
     background-color: #12120f;
@@ -230,46 +236,205 @@ textarea:hover{
     transition: .2s ease;
 }
 
-.form__boton:hover{
+.form__boton:hover {
     color: #b82734;
 }
 
-.form__exito{
+.form__exito {
     margin-top: 4px;
     color: rgb(41, 224, 41);
     display: none;
 }
 
 
-.form__exito-activo{
+.form__exito-activo {
     display: block;
 }
 
 /*----ACTIVACION----*/
 
-.form__grupo-bien .form__input{
+.form__grupo-bien .form__input {
     color: #eda121;
 }
 
-.form__grupo-mal .form__label{
+.form__grupo-mal .form__label {
     color: #12120f;
 }
 
-.form__grupo-mal .form__input{
+.form__grupo-mal .form__input {
     border: 2px solid #12120f;
     border-radius: 4px;
 }
 
-.form__grupo-bien .form__textarea{
+.form__grupo-bien .form__textarea {
     color: #eda121;
 }
 
-.form__grupo-mal .form__textarea{
+.form__grupo-mal .form__textarea {
     border: 2px solid #12120f;
     border-radius: 4px;
 }
 
+/*----CARRUSEL----*/
 
+.carousel {
+    margin-left: 0px;
+    margin-bottom: 100px;
+}
+
+.carousel-inner {
+    height: 850px;
+}
+
+.fff {
+    margin-left: 0px;
+    height: 850px;
+}
+
+/*----SECCION----*/
+
+.section {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.titulos {
+    margin-left: 15%;
+    font-size: 30px;
+}
+
+.hr_uno {
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    color: #12120f;
+}
+
+/*----INCIO DE SESION----*/
+
+.section__dos{
+    width: 1200px;
+    height: 850px;
+    display: grid;
+    grid-template-areas:
+        "sesion__form sesion_img";
+    grid-template-columns: 500px 700px;
+    grid-template-rows: auto;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 150px;
+}
+
+.eee{
+    margin-left: 0px;
+    width: 700;
+    height: 850px;
+}
+
+.sesion__form{
+    grid-area: sesion__form;
+    background-color: #b82734;
+}
+
+.login{
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.form__ini{
+    display: grid;
+    gap: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+.form__iniciar label,
+input {
+    width: 85%;
+    border: none;
+    outline: none;
+    resize: none;
+    padding-left: 10px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.form__error {
+    width: 85%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eda121;
+    color: #12120f;
+    border-radius: 4px;
+    padding-left: 30px;
+    margin-left: 30px;
+    display: none;
+}
+
+.form__botonn {
+    width: 200px;
+    height: 35px;
+    background-color: #12120f;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    resize: none;
+    transition: .2s ease;
+}
+
+.form__botonn:hover {
+    color: #b82734;
+}
+
+.form__iniciar input:focus {
+    border: 2px solid #eda121;
+    outline: none;
+}
+
+.form__iniciar input:hover {
+    border: 2px solid #eda121;
+    outline: none;
+}
+
+.sin__cuenta p{
+    font-size: 5px;
+    margin: 0px;
+}
+
+.sin__cuenta{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sin__cuenta p{
+    margin: 0px;
+}
+
+.sin__cuenta a{
+    background-color: #b82734;
+    font-size: 15px;
+    text-decoration: none;
+    list-style: none;
+    transition: .5s ease ;
+    width: 150px;
+   height: 20px;
+   margin: 0px;
+   padding-left: 15px;
+}
+
+.sin__cuenta a:hover{
+    color: #12120f;
+}
 
 
 /*
@@ -362,5 +527,3 @@ input:hover , textarea:hover{
 .boton:hover{
     color: #b82734;
 }*/
-
-

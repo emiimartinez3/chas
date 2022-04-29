@@ -14,7 +14,7 @@ const expresiones = {
 
 const campos = {
    nombre: false,
-   apellido: false,
+   apellido: false, 
    email: false,
    telefono: false,
    mensaje: false
@@ -74,9 +74,9 @@ inputs.forEach((input) => {
 });
 
 texto.forEach((textarea) => {
-   textarea.addEventListener('keyup', validarFormulario);
-   textarea.addEventListener('blur', validarFormulario);
-});
+      textarea.addEventListener('keyup', validarFormulario);
+      textarea.addEventListener('blur', validarFormulario);
+   });
 
 
 formulario.addEventListener('submit', (e) => {
