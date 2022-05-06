@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+
 <html lang="es">
 
 <head>
@@ -32,7 +33,7 @@
           </ul>-->
         </li>
 
-        <li><a href="#" class="nav__item">Contacto</a></li>
+        <li><a href="./contactos.html" class="nav__item">Contacto</a></li>
       </ul>
     </nav>
 
@@ -46,81 +47,63 @@
 
 
 
-  <section class="section">
+  <section class="section epep">
 
     <div>
       <img src="./img__rocket/bat__dos__caras.jpg" alt="" width="550" height="850" class="xport">
     </div>
 
 
-    <form class="formulario" id="formulario">
+    <form class="formulario" id="formulario" method="GET">
 
       <h1 class="contactenos">CONTACTENOS...</h1>
 
       <div class="form__grupo" id="grupo__nombre">
         <label for="nombre" class="form__label">Nombre :</label>
         <div class="form__grupo-input">
-          <input type="text" class="form__input" name="nombre" id="nombre" required>
+          <input type="text" class="form__input" name="nombre" id="nombre">
         </div>
-        <p class="form__error-input">El nombre tiene que ser de 4 a 16 letras</p>
       </div>
 
 
       <div class="form__grupo" id="grupo__apellido">
         <label for="apellido" class="form__label">Apellido :</label>
         <div class="form__grupo-input">
-          <input type="text" class="form__input" name="apellido" id="apellido" required>
+          <input type="text" class="form__input" name="apellido" id="apellido">
         </div>
-        <p class="form__error-input">El apellido tiene que ser de 4 a 16 letras</p>
       </div>
 
 
       <div class="form__grupo" id="grupo__email">
         <label for="email" class="form__label">Email :</label>
         <div class="form__grupo-input">
-          <input type="email" class="form__input" name="email" id="email" required>
+          <input type="email" class="form__input" name="email" id="email">
         </div>
-        <p class="form__error-input">El email solo puede tener letras, numeros, guiones y guiones bajo</p>
       </div>
 
 
       <div class="form__grupo" id="grupo__telefono">
         <label for="telefono" class="form__label">Telefono :</label>
         <div class="form__grupo-input">
-          <input type="text" class="form__input" name="telefono" id="telefono" required>
+          <input type="text" class="form__input" name="telefono" id="telefono">
         </div>
-        <p class="form__error-input">El telefono solo puede tener hasta 12 numeros</p>
       </div>
 
 
       <div class="form__grupo" id="grupo__mensaje">
         <label for="mensaje" class="form__label">Mensaje :</label>
         <div class="form__grupo-mensaje">
-          <textarea name="mensaje" id="mensaje" cols="50" rows="3" class="form__textarea" required></textarea>
+          <textarea name="mensaje" id="mensaje" cols="50" rows="3" class="form__textarea"></textarea>
         </div>
-        <p class="form__error-input">El mensaje no puede estar vacio</p>
-      </div>
-
-
-      <div class="form__grupo-terminos" id="grupo__terminos">
-        <label  class="form__label">
-          <input class="form__check" type="checkbox" name="terminos" id="terminos">
-          Acepto los terminos y condiciones
-        </label>
-      </div>
-
-
-      <div class="form__error-mensaje" id="form_error-mensaje">
-        <p><i class='bx bxs-comment-x'></i><b>  Error :</b>  por favor llene todos el formulario</p>
       </div>
 
 
       <div class="form__grupo form__boton-enviar">
-        <button type="submit" class="form__boton">Enviar</button>
+        <button type="button" class="form__boton" onclick="validarFormulario()">Enviar</button>
         <p class="form__exito" id="form__exito">Formulario enviado!!</p>
       </div>
 
-      
+
 
 
     </form>
@@ -135,7 +118,10 @@
 
   <!-- SCRIPT DE PROYECTO -->
 
-  <script src="./master_js/main.js"></script>
+  <script src="./master_js/ccoo.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
   <!-- SCRIPT DE BS -->
 
